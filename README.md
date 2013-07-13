@@ -34,5 +34,5 @@ You're free to use, modify and distribute, partially or completely, in whatever 
 
 ## Known Issues and Limitations
 
-1. As there is no strategy for deploying code changes, when multiple persons edit a single line, strange things happen. This can be resolved very easily with ShareJS, which is an Operational Transform library and was build exactly for real-time editing. However, as it uses BrowserChannel instead of Socket.io and this was an experiments with the latter, I chose to stay away from ShareJS.
+1. As there is no strategy for deploying code changes, when multiple persons edit a single line, strange things happen. This can be resolved very easily with ShareJS, which is an Operational Transform library and was build exactly for real-time editing. However, as it uses BrowserChannel instead of Socket.io and this was an experiment with the latter, I chose to stay away from ShareJS, at least for the time being.
 2. The code editor's history is untouched, which means that it behaves in the same way as if it was a single editor. Undo or redo will apply to both changes of the user and clients and it makes it unreliable. However, Ace has got a nice UndoManager and this is something I'll try to address in the future.
