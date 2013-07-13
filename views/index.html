@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{% parent %}
+ - Real-time code editing
+{% endblock %}
+
+{% block content %}
+
+	<div class="wrapper index">
+		<div class="logo">
+			<img src="/img/logo.gif" alt="Code in Tune">
+		</div>
+		<h1>Code in <strong>real-time</strong> with your friends, work on a feature with your <strong>collaborators</strong> or just <strong>broadcast</strong> live code changes. Oh, and there's an integrated chat too!</h1>
+
+		<div class="button">
+			<a href="/{{ room }}">Create a Room</a>
+			<p>and share the URL to start collaborating</p>
+		</div>
+
+		<img src="/img/monitors.png" alt="Code Collaboration">
+	</div>
+
+	<footer>
+		<div class="wrapper">
+			<div>
+				<h2>Real-time coding</h2>
+				<p>Get instant feedback on each other while you're writing code. The non destructive nature allows two or more persons to code indipendently, but still see changes live.</p>
+			</div>
+			<div>
+				<h2>Powerful editor</h2>
+				<p>We chose to use <a href="http://ace.ajax.org/">Ace</a> because it's the most powerful browser-based editor we've seen. Countless supported languages, themes, multiple cursors and a lot more.</p>
+			</div>
+			<div>
+				<h2>Integrated chat</h2>
+				<p>Chat with your friends while you code and discuss what you're writing. The chat and settings panels are completely unobtrusive, but still call your attention when needed.</p>
+			</div>
+			<div>
+				<h2>As easy as it gets</h2>
+				<p>Create a room with just one click and invite friends by sharing the URL. There's also the other way around: just paste the URL your friend gave and you're in. Yep, that's all!</p>
+			</div>
+			<p>
+				Build with love in <a href="http://www.albaniantourism.com/">Albania</a> by <a href="http://www.streha.al">Streha.al</a>
+			</p>
+		</div>
+	</footer>
+
+{% endblock %}

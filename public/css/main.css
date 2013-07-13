@@ -1,0 +1,320 @@
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: white;
+	font: 14px "Monda", Helvetica, Arial, sans-serif;
+	color: #545454;
+}
+
+.wrapper
+{
+	max-width: 980px;
+	min-width: 780px;
+	margin: 0 auto;
+}
+
+.index
+{
+	text-align: center;
+}
+
+.index .logo
+{
+	margin: 50px 0;
+}
+
+.index h1
+{
+	font-size: 25px;
+	width: 70%;
+	margin: 0 auto;
+	line-height: 1.4em;
+}
+
+.index h1 strong
+{
+	font-weight: bold;
+	color: #444;
+}
+
+.index .button
+{
+	margin: 50px 0;
+}
+
+.index .button a
+{
+	display: inline-block;
+	background: #db5050;
+	color: white;
+	font-size: 28px;
+	border-radius: 3px;
+	border: 1px solid #db5050;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), inset 0 30px 0 rgba(255, 255, 255, 0.1);
+	text-decoration: none;
+	padding: 6px 35px;
+}
+
+.index .button a:hover
+{
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .6), inset 0 30px 0 rgba(255, 255, 255, 0.15);
+}
+
+.index .button p
+{
+	margin-top: 5px;
+}
+
+footer
+{
+	background: #eaeaea;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+
+footer .wrapper
+{
+	overflow: hidden;
+}
+
+footer .wrapper > div
+{
+	float: left;
+	width: 20%;
+	margin-left: 5%;
+	margin-bottom: 30px;
+}
+
+footer .wrapper > div:first-child
+{
+	margin-left: 0;
+}
+
+footer .wrapper > div h2
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #545454;
+	margin-bottom: 10px;
+}
+
+footer .wrapper > p
+{
+	clear: both;
+	text-align: right;
+	border-top: 1px solid #ccc;
+	padding: 10px 0;
+	color: #808080;
+}
+
+footer a
+{
+	text-decoration: underline;
+	color: #db5050;
+}
+
+footer a:hover
+{
+	color: #d70d0d;
+}
+
+#editor { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.toolbar
+{
+	position: fixed;
+	top: 18px; right: 18px;
+	background: #74a7d7;
+	border-radius: 3px;
+	padding: 10px 20px;
+	z-index: 9999;
+}
+
+.toolbar > a
+{
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.toolbar > a:first-child
+{
+	margin-left: 0;
+}
+
+.toolbar > a.settings-toggle
+{
+	width: 23px;
+	height: 26px;
+	background: url(../img/settings.png) no-repeat 0 -52px;
+}
+
+.toolbar > a.settings-toggle.active
+{
+	background-position: 0 -26px;
+}
+
+.toolbar > a.settings-toggle.hover
+{
+	background-position: 0 0;
+}
+
+.toolbar > a.chat-toggle
+{
+	width: 27px;
+	height: 24px;
+	background: url(../img/chat.png) no-repeat 0 -48px;
+}
+
+.toolbar > a.chat-toggle.active
+{
+	background-position: 0 -24px;
+}
+
+.toolbar > a.chat-toggle.hover
+{
+	background-position: 0 0;
+}
+
+.toolbar > a.share-toggle
+{
+	width: 27px;
+	height: 27px;
+	background: url(../img/share.png) no-repeat 0 -27px;
+}
+
+.toolbar > a.share-toggle.hover
+{
+	background: url(../img/share.png) no-repeat 0 0px;
+}
+
+.toolbar > a.users-toggle
+{
+	width: 34px;
+	height: 25px;
+	background: url(../img/users.png) no-repeat 0 -25px;
+	position: relative;
+}
+
+.toolbar > a.users-toggle.hover
+{
+	background: url(../img/users.png) no-repeat 0 0;
+}
+
+.toolbar .settings,
+.toolbar .chat,
+.toolbar .share,
+.toolbar .users
+{
+	display: none;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	text-align: right;
+	background: #74a7d7;
+	padding: 10px;
+	border-radius: 3px 0 3px 3px;
+	color: white;
+	width: 250px;
+}
+
+.toolbar .settings label
+{
+	padding-left: 5px;
+	display: block;
+	text-align: right;
+}
+
+.toolbar .settings select
+{
+	display: block;
+	float: right;
+	width: 100%;
+}
+
+.toolbar .settings select option
+{
+	text-align: right;
+}
+
+.toolbar .chat
+{
+	width: 300px;
+}
+
+.toolbar .chat > div,
+.toolbar .chat textarea,
+.toolbar .settings input,
+.toolbar .share input,
+.toolbar .users > div
+{
+	width: 100%;
+	padding: 5px;
+	font: 13px "Monda", Helvetica, Arial, sans-serif;
+	background: white;
+	border-radius: 3px;
+	color: #555;
+	border: 0;
+}
+
+.toolbar .chat > div,
+.toolbar .users > div
+{
+	height: 150px;
+	overflow-y: scroll;
+	text-align: left;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+.toolbar .chat > div strong
+{
+	font-weight: bold;
+	color: #333;
+}
+
+.toolbar .chat textarea
+{
+	height: 50px;
+	margin-top: 5px;
+}
+
+.toolbar .users-toggle p
+{
+	display: none;
+	position: absolute;
+	top: -5px; right: -5px;
+	background: #db5050;
+	padding: 3px 5px;
+	border-radius: 3px;
+	color: white;
+	font-size: 11px;
+	line-height: 1em;
+}
+
+.message
+{
+	display: none;
+	position: fixed;
+	top: 18px; right: 250px;
+	z-index: 9999;
+	background: rgba(0, 0, 0, .2);
+	padding: 12px 15px;
+	border-radius: 3px;
+	color: white;
+	font-size: 17px;
+}

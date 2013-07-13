@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{% parent %}
+ - Page not found
+{% endblock %}
+
+{% block content %}
+
+	<div class="wrapper index">
+		<div class="logo">
+			<img src="/img/logo.gif" alt="Code in Tune">
+		</div>
+		<h1>Oops, page not found!</h1>
+
+		<div class="button">
+			<a href="/{{ room }}">Create a Room</a>
+			<p>and share the URL to start collaborating</p>
+		</div>
+	</div>
+
+{% endblock %}
