@@ -11,18 +11,18 @@ The whole idea revolves around rooms. When a visitor creates a room, he or she c
 You will need Node.js installed on your machine (obviously); I did my tests with a recent v0.10.12, but older versions shouldn't be a problem.
 
 After cloning or downloading the repo, navigate to that folder and install dependencies (defined in package.json).
-	$ npm install
+    $ npm install
 
 Start the server! It will run on http://localhost:1337 by default.
-	$ node app.js
+    $ node app.js
 
 If you want to change the server and/or port, you'll have to edit two lines.
 
 The server port is a variable in /app.js at line 5.
-	$ port = 1337
+    $ port = 1337
 
 There's also the client socket connection in /public/js/app/socket.js at line 13.
-	$ this.socket = io.connect('http://localhost:1337');
+    $ this.socket = io.connect('http://localhost:1337');
 
 ## Licence
 
